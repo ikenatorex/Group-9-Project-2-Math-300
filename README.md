@@ -5,7 +5,7 @@ Isaac S. : Initial code setup for ode systems,
 
 Tia A. :
 
-Logan G. :
+Logan G. : Deriving first order equations, model definition, and parameters for the Pendulum equation.
 
 Prerequisites:
 numpy
