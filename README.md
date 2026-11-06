@@ -1,13 +1,15 @@
 # Group-9-Project-2-Math-300
 Author contributions:
 
-Isaac S. : 
+Isaac S. : Initial code setup for ode systems, 
 
 Tia A. :
 
 Logan G. :
 
 Prerequisites:
+numpy
+matplotlib
+scipy
 
 How to run:
-
