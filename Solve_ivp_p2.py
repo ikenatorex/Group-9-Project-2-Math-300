@@ -46,10 +46,49 @@ ttlorenz = np.linspace(0, 50, 10000)
 sol_L_info = []
 
 # list of initial conditions for lorenz
-initial_conditions_L = [[1, 1, 1], [1.000001, 1, 1], [0, 1, 0], [-8, 8, 27], [5, -5, 20]]
+initial_conditions_L = [[0, 0, 0], [1, 1, 1], [1.000001, 1, 1], [0, 1, 0], [-8, 8, 27], [5, -5, 20]]
 
 #solution with chosen initial conditions x0,y0,z0 over T=50
 for x0, y0, z0 in initial_conditions_L:
-    sol_L = solve_ivp(lorenz, (0, 50), [1, 1, 1], t_eval = ttlorenz, rtol = 1e-9, atol = 1e-12) 
-    sol_L_info.append([sol_L.y, sol_L.y[0], sol_L.y[1], sol_L.y[2]]) # Returns time and all initial conditions for each in the list
+    sol_L = solve_ivp(lorenz, (0, 50), [x0, y0, z0], t_eval = ttlorenz, rtol = 1e-9, atol = 1e-12) 
+    sol_L_info.append([sol_L.t, sol_L.y[0], sol_L.y[1], sol_L.y[2]]) # Returns time and all initial conditions for each in the list
+
+# Plotting conditions vs time for both systems
+fig, axes = plt.subplots(4, 2, figsize=(9, 9))
+
+# Pendulum plots
+for i, (t, th, o) in enumerate(sol_Pend_info):
+    ax = axes[i//2, i%2]
+
+    ax.plot(t, th, label='Theta')
+    ax.plot(t, o, label='Omega')
+
+    ax.set_title(f'Initial Condition: {initial_conditions_Pend[i]}')
+    ax.set_xlabel('Time')
+    ax.set_ylabel('Value')
+    ax.legend()
+    ax.grid()
+
+plt.tight_layout()
+plt.show()
+
+fig, axes = plt.subplots(3, 2, figsize=(9, 9))
+
+# Lorenz plots
+for i, (t, x, y, z) in enumerate(sol_L_info):
+    ax = axes[i//2, i%2]
+
+    ax.plot(t, x, label='X')
+    ax.plot(t, y, label='Y')
+    ax.plot(t, z, label='Z')
+
+    ax.set_title(f'Initial Condition: {initial_conditions_L[i]}')
+    ax.set_xlabel('Time')
+    ax.set_ylabel('Value')
+    ax.legend()
+    ax.grid()
+
+plt.tight_layout()
+plt.show()
+
 
