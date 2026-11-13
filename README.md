@@ -3,7 +3,7 @@ Author contributions:
 
 Isaac S. : Initial code setup for ode systems, 
 
-Tia A. : First order equations, model definition, and parameters for the Lorenz equation. 
+Tia A. : First order equations, model definition, and parameters for the Lorenz equation. Model definition, and parameters for the Van der Pol oscillator
 
 Logan G. : Deriving first order equations, model definition, and parameters for the Pendulum equation.
 
