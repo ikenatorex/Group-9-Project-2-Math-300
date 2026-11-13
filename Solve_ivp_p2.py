@@ -69,9 +69,6 @@ for i, (t, th, o) in enumerate(sol_Pend_info):
     ax.legend()
     ax.grid()
 
-plt.tight_layout()
-plt.show()
-
 fig, axes = plt.subplots(3, 2, figsize=(9, 9))
 
 # Lorenz plots
