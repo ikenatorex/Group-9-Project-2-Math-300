@@ -1,0 +1,3 @@
+AI Disclosure:
+Isaac S. :
+Used AI copilot built into VS code autocomplete feature to fix minor bugs and syntax errors.
