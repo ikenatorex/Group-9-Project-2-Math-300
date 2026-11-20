@@ -11,6 +11,7 @@ L = 1 # Length of pendulum
 # Let th=theta and o=omega
 # Pendulum system
 def pendulum(t, z):
+    '''Pendulum system written as first order ODES.'''
     th, o = z
     dthdt = o
     dodt = -(g/L) * np.sin(th)
@@ -34,6 +35,7 @@ beta = 8/3
 
 # Lorenz system
 def lorenz(t, xyz):
+    '''Lorenz system written as first order ODES.'''
     x, y, z = xyz
     dxdt = sigma * (y-x)
     dydt = x * (rho - z) - y
@@ -59,6 +61,7 @@ u = 1
 
 # VDP system
 def VDP(t, z):
+    '''Van der Pol system written as first order ODES.'''
     x, y = z
     dxdt = y
     dydt = u * (1 - x**2) * y - x
