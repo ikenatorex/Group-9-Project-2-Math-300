@@ -23,5 +23,9 @@ The program should open up four matplot windows, three for the separate systems 
 AI Disclosure:
 Isaac S. :
 Used Copilot built into VS code to autocomplete fixing minor bugs and syntax errors.
+
 Logan G. :
 None.
+
+Tia A. : 
+None
