@@ -105,11 +105,12 @@ plt.loglog(rtols, errors, 'o-')
 
 plt.xlabel('Relative Tolerance (rtol)')
 plt.ylabel('Final Energy Error')
-plt.title('Pendulum Error vs Solver Tolerance')
+plt.title('Pendulum Error vs Solver Tolerance (loglog)')
 plt.grid(True, which='both')
 
 # Plotting conditions vs time for both systems
 fig, axes = plt.subplots(4, 2, figsize=(9, 9))
+plt.suptitle('Pendulum system')
 
 # Pendulum plots
 for i, (t, th, o) in enumerate(sol_Pend_info):
@@ -123,8 +124,10 @@ for i, (t, th, o) in enumerate(sol_Pend_info):
     ax.set_ylabel('Value')
     ax.legend()
     ax.grid()
+plt.tight_layout() # Fixes spacing issues between subplots
 
 fig, axes = plt.subplots(3, 2, figsize=(9, 9))
+plt.suptitle('Lorenz system')
 
 # Lorenz plots
 for i, (t, x, y, z) in enumerate(sol_L_info):
@@ -139,8 +142,10 @@ for i, (t, x, y, z) in enumerate(sol_L_info):
     ax.set_ylabel('Value')
     ax.legend()
     ax.grid()
+plt.tight_layout()
 
 fig, axes = plt.subplots(3, 2, figsize=(9, 9))
+plt.suptitle('Van der Pol system')
 
 # VDP plots
 for i, (t, x, y) in enumerate(sol_VDP_info):
@@ -154,6 +159,6 @@ for i, (t, x, y) in enumerate(sol_VDP_info):
     ax.set_ylabel('Value')
     ax.legend()
     ax.grid()
-
 plt.tight_layout()
+
 plt.show()
