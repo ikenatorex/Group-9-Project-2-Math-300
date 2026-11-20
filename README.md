@@ -29,3 +29,11 @@ None.
 
 Tia A. : 
 None
+
+Explination of Graphs:
+The error plot shows a linear relationship between the powers of rtol and accuracy of the solver for the pendulum system.
+
+All other graphs show variations of initial conditions:
+Pendulum: Different initial conditions change the size and shape of ocilating wave patterns but maintain the relationship between theta and omega.
+Van der Pol: Different initial conditions change how long it takes to reach an ocilating behavior but the size and shape of waves stay similar.
+Lorenz: Small variations in initial conditions greatly change the behavior of all variables, though X and Y stay nearly identical through all graphs. Some initial conditions begin the chaotic behavior faster then others.
