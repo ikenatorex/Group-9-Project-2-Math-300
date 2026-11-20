@@ -19,3 +19,7 @@ How to run:
 
 Expectations:
 The program should open up four matplot windows, three for the separate systems and one for the error of the pendulum system.
+
+AI Disclosure:
+Isaac S. :
+Used Copilot built into VS code to autocomplete fixing minor bugs and syntax errors.
