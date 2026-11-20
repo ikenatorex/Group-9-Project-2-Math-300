@@ -13,3 +13,9 @@ matplotlib
 scipy
 
 How to run:
+1. Download or clone this repository
+2. Open terminal or similar codespace in the directory containing this file
+3. Run the program using python Solve_ivp_p2.py
+
+Expectations:
+The program should open up four matplot windows, three for the separate systems and one for the error of the pendulum system.
