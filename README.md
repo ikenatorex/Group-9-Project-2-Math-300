@@ -5,7 +5,7 @@ Isaac S. : All coding, minus some refferences pulled from previous activties. Se
 
 Tia A. : First order equations, model definition, and parameters for the Lorenz equation. Model definition, and parameters for the Van der Pol oscillator
 
-Logan G. : Deriving first order equations, model definition, and parameters for the Pendulum equation.
+Logan G. : Deriving first order equations, model definition, and parameters for the Pendulum equation. Deriving Equations for the Van der Pol Oscillator function.
 
 Prerequisites:
 numpy
