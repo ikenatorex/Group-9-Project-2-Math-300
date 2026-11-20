@@ -31,6 +31,7 @@ Tia A. :
 None
 
 Explination of Graphs:
+
 The error plot shows a linear relationship between the powers of rtol and accuracy of the solver for the pendulum system.
 
 All other graphs show variations of initial conditions:
